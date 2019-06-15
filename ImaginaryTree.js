@@ -1,15 +1,13 @@
 const countTreeHeight = (x, y) => {
 	let tinggi = x
 	for(let i = 0; i < y; i++){
-		for(let j = 0; j < 2; j++){
 		//semi
-		tinggi += tinggi
+		tinggi *= 2
 
 		//gugur
 		tinggi++
-		}
 	}
 	return tinggi
 }
 
-console.log(countTreeHeight(2, 2))
+console.log(countTreeHeight(2, 7))
