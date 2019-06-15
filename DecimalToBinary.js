@@ -19,3 +19,5 @@ const decToBin = dec => {
 
 	return bin.reverse().join('')
 }
+
+console.log(decToBin(100))

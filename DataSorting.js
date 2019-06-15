@@ -13,3 +13,5 @@ const sorting = array => {
 	console.log("Descending:")
 	console.log(...sortmax)
 }
+
+sorting([21,1,32,54,12,36,74,21,34,21,65])
