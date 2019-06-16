@@ -1,23 +1,26 @@
 const sikuSiku = len => {
+    if(len < 1 || len > 10){
+        alert("ukuran harus diantara 1 sampai 10")
+    } else {
+    	const prime = [2]
 
-	const prime = [2]
-
-	let x = 3
-	while (prime.length < len) {
-        if ( isPrime(x) ) {
-            prime.push(x);
+    	let x = 3
+    	while (prime.length < len) {
+            if ( isPrime(x) ) {
+                prime.push(x);
+            }
+        x++
         }
-    x++
+
+        console.log(...prime)
+
+    	for(let i = 0; i < len; i++){
+    		for (let j = 0; j < i; j++) {
+    			document.write(prime[j])
+    		}
+    		document.write("<br>")
+        }
     }
-
-    console.log(...prime)
-
-	for(let i = 0; i < len; i++){
-		for (let j = 0; j < i; j++) {
-			document.write(prime[j])
-		}
-		document.write("<br>")
-	}
 }
 
 const isPrime = num => {

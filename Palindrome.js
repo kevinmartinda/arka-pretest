@@ -1,4 +1,7 @@
 const countPal = (string, search) => {
+  if(search.length > string.length){
+    return "kata yang dicari tidak boleh lebih panjang daripada string"
+  }
 
   string += ""
   search += ""
